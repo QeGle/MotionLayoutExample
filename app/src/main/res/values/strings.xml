@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MotionLayout</string>
+
+    <string name="menu_notifications">Notify</string>
+    <string name="menu_dashboard">Dash</string>
+    <string name="menu_home">Home</string>
+
+    <string name="backdrop_resolution">Resolution</string>
+    <string name="backdrop_airplane">Airplane</string>
+    <string name="backdrop_apartments">Apartments</string>
+    <string name="backdrop_balance">Balance</string>
+</resources>

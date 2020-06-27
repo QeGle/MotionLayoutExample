@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@layout/activity_backdrop_end"
+        motion:constraintSetStart="@layout/activity_backdrop_start"
+        motion:duration="500">
+
+        <OnClick motion:targetId="@+id/ivMenu" />
+
+        <OnSwipe motion:dragDirection="dragDown" />
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:translationX="-44dp"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/tv1" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="25"
+                motion:motionTarget="@+id/tv1" />
+            <KeyCycle
+                motion:motionTarget="@+id/textView5"
+                motion:framePosition="10"
+                motion:waveShape="sin"
+                motion:wavePeriod="1"
+                android:rotation="90"
+                motion:waveOffset="0" />
+            <KeyTrigger
+                motion:framePosition="10"
+                motion:onPositiveCross="show"
+                motion:onNegativeCross="hide"
+                motion:onCross="doSome"
+                motion:motionTarget="@+id/fab"/>
+            <KeyAttribute
+                android:translationX="-44dp"
+                motion:framePosition="25"
+                motion:motionTarget="@+id/tv2" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/tv2" />
+
+            <KeyAttribute
+                android:translationX="-44dp"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/tv3" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/tv3" />
+
+            <KeyAttribute
+                android:translationX="-44dp"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/tv4" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/tv4" />
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>
